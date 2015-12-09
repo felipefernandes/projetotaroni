@@ -466,7 +466,7 @@ h2 {
   border-bottom: 5px solid #e8e8e8; }
 
 .page-content {
-  padding: 0; }
+  padding: 30px 0 0; }
 
 .conteudo {
   margin-top: 30px;
@@ -478,6 +478,9 @@ h2 {
     text-decoration: underline; }
     .conteudo a:hover {
       text-decoration: none; }
+
+.divisao {
+  margin: 40px 0; }
 
 .bloco {
   position: relative; }
@@ -507,7 +510,7 @@ h2 {
     background: transparent;
     font-size: 18pt;
     transition: 0.2s; }
-    #menu-principal .site-nav .page-link:hover {
+    #menu-principal .site-nav .page-link:hover, #menu-principal .site-nav .page-link.active {
       background: red;
       color: white;
       text-decoration: none; }
@@ -542,6 +545,9 @@ h2 {
   height: auto; }
 
 /* index */
+.home {
+  margin-top: -30px; }
+
 .descricao {
   text-align: justify; }
 

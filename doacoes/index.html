@@ -1,0 +1,137 @@
+---
+layout: default
+title: Faça sua Doação
+permalink: /doacoes/
+---
+<article class="post container">
+
+  <div class="row">
+    <div class="col-lg-12 col-md-12">
+      <h1 class="post-title">{{ page.title }}</h1>
+    </div>
+  </div>
+
+  <div class="row post-content">
+    <div class="descricao col-lg-6 col-md-6">
+      <p>Um pequeno texto falando sobre a necessidade de doação dos equipamentos
+      esportivos</p>
+
+      <div class="hidden-xs hidden-sm">
+        [ fotos de materiais esportivos ]<br>
+        <img src="http://www.placehold.it/555x100"><br><br>
+
+        [ fotos com as crianças usando os materiais ]<br>
+        <img src="http://www.placehold.it/555x300">
+      </div>
+
+      <div class="visible-xs visible-sm">
+        <hr class="divisao">
+      </div>
+
+    </div>
+
+    <div class="col-lg-6 col-md-6" ng-controller="DoacoesController">
+      <h4>Preenchendo o formulário abaixo você nos informa o material disponível
+        para doação, e então nós entraremos em contato para combinar a retirada.</h4>
+      <form class="form"
+            novalidate="novalidate"
+            ng-submit="onSubmit()">
+        <div class="input-group form-group">
+          <span class="input-group-addon">Seu Nome</span>
+          <input type="text"
+                class="form-control"
+                placeholder="Digite aqui"
+                id="nome"
+                ng-model="formModel.nome"
+                required="required">
+        </div>
+        <div class="input-group form-group">
+          <span class="input-group-addon">Seu e-mail</span>
+          <input type="email"
+                 class="form-control"
+                 placeholder="email@host.xwz"
+                 id="email"
+                 ng-model="formModel.email"
+                 required="required">
+        </div>
+        <div class="input-group form-group">
+          <span class="input-group-addon">Telefone de contato</span>
+          <input type="text"
+                 class="form-control"
+                 placeholder="00000-0000"
+                 id="telefone"
+                 ng-model="formModel.telefone"
+                 required="required">
+        </div>
+
+        <h4>Selecione os itens de doação:</h3>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" ng-model="formModel.luva"> Luva
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" ng-model="formModel.bandagem"> Bandagem
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" ng-model="formModel.caneleira"> Caneleira
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" ng-model="formModel.calcao"> Calção
+              </label>
+            </div>
+          </div><!-- form-group -->
+        </div><!-- col-lg-6 -->
+        <div class="col-lg-6">
+          <div class="form-group">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" ng-model="formModel.protbucal"> Protetor Bucal
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" ng-model="formModel.protcabeca"> Protetor de cabeça
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" ng-model="formModel.coquilha"> Coquilha
+                </label>
+              </div>
+              <!--
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" ng-model="checkOutro" ng-change="habilitaOutro()">Outro
+                </label>
+              </div>
+              <input type="text"
+                     ng-model="formModel.outro"
+                     ng-show="[[ checkOutro ]]"
+                     id="outro"
+                     placeholder="especifique...">
+              -->
+          </div><!-- form-group -->
+        </div><!-- col-lg-6 -->
+
+        <div class="col-xs-12">
+          <div class="form-group pull-right">
+            <button type="submit" class="btn btn-default">Enviar</button>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- <tt>[[ checkOutro ]]</tt> <pre>[[ formModel | json ]] </pre> -->
+
+    </div>
+  </div>
+
+</article>

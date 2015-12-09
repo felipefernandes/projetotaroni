@@ -17,3 +17,6 @@ url: "http://www.projetotaroni.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-angular
