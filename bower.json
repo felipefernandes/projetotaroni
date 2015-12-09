@@ -1,0 +1,23 @@
+{
+  "name": "Projeto Taroni",
+  "homepage": "http://www.projetotaroni.org",
+  "authors": [
+    "Felipe Fernandes <ripcorp@gmail.com>"
+  ],
+  "description": "Muay Thai Para Todos",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8"
+  }
+}

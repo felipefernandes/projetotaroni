@@ -1,0 +1,48 @@
+<footer id="site-footer">
+
+  <div class="container">
+    <div class="row top">
+      <div class="col-lg-3">
+        <a class="logotipo" href="{{ site.baseurl }}/" title="{{ site.title }}">
+          <img src="{{ "/assets/images/logo-rodape.png" | prepend: site.baseurl }}">
+        </a>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="hashtag">#PratiqueMuayThaiPelaSaúde</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="footer-menu">
+          {% for my_page in site.pages %}
+            {% if my_page.title %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="redes-sociais">
+          facebook, instagram, e outras coisas
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 assinatura">
+        <a class="logotipo" href="http://pracadoconhecimento.com.br" target="_blank">
+          <img src="{{ "/assets/images/nave-assinatura.png" | prepend: site.baseurl }}">
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script language="Javascript" src="{{ "/assets/jquery/dist/jquery.min.js" | prepend: site.baseurl  }}">
+<script language="Javascript" src="{{ "/assets/bootstrap/dist/js/bootstrap.min.js" | prepend: site.baseurl  }}">
+<script language="Javascript" src="{{ "/assets/angular/angular.min.js" | prepend: site.baseurl  }}">
+<script language="Javascript" src="{{ "/assets/main.js" | prepend: site.baseurl  }}">
