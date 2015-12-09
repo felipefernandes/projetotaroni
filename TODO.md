@@ -1,7 +1,11 @@
 #Projeto Taroni
 
- - **Homepage (ok)**
+ - Homepage
+  - texto revisado
+  - imagens para o slideshow
+  - video (?)
  - Sobre o Projeto
+  - texto revisado
   - imagens
  - Doações
   - formulário (feedback de enviando e enviado)
