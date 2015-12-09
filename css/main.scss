@@ -1,0 +1,253 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+
+
+// PERSONALIZACOES
+h2 {
+  display: inline-block;
+  margin-bottom: 25px;
+  border-bottom: 1px solid red;
+}
+
+
+.site-header {
+  border-top: none;
+  border-bottom: 5px solid #e8e8e8;
+}
+
+.page-content {
+  padding: 0;
+}
+
+.conteudo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 60px;
+  }
+
+  a {
+    color: red;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.bloco {
+  position: relative;
+}
+
+#pre-header {
+  background: black;
+  text-align: right;
+  padding: 10px 0 12px;
+
+  #brasil, #thai {
+    display: inline-block;
+    width: 28px;
+    height: 20px;
+    margin-left: 3px;
+  }
+}
+
+.logotipo {
+  display: block;
+  text-align: center;
+}
+
+#menu-principal {
+  .trigger {
+    text-align: center;
+  }
+
+  .site-nav {
+    float: none;
+    margin: 0 -8px;
+
+    .page-link {
+      display: inline-block;
+      padding: 4px 8px;
+      background: transparent;
+      font-size: 18pt;
+      transition: 0.2s;
+
+      &:hover {
+        background: red;
+        color: white;
+        text-decoration: none;
+
+      }
+    }
+  }
+}
+
+#site-footer {
+  background: black;
+  color: white;
+  padding: 25px 0;
+  margin-bottom: -15px;
+
+  .top {
+    margin-bottom: 25px;
+  }
+
+  .logotipo {
+    float: left;
+    text-align: left;
+  }
+
+  .hashtag {
+    display:inline-block;
+    background: #181818;
+    padding: 10px 15px;
+    font-size: 28px;
+    float: right;
+  }
+
+  .assinatura {
+    float: right;
+    text-align: right;
+  }
+
+  .footer-menu {
+    a {
+        color: white;
+
+        &:hover {
+          text-decoration: none;
+          border-bottom: 1px solid red;
+        }
+    }
+
+  }
+
+}
+
+#webdoor {
+
+  .carousel {
+
+  }
+
+  .carousel-inner {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
+
+/* index */
+.descricao {
+  text-align: justify;
+}
+
+.bloco-rodape {
+  text-align: right;
+}
+
+.coordenacao {
+   position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .etiqueta {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 7px 10px 7px 15px;
+    background: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 12px;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    span {
+      font-size: 10px;
+      font-weight: normal;
+    }
+  }
+}
+
+.horarios {
+  font-size: 20px;
+  height: 150px;
+
+  .subtitulo {
+    display: block;
+    font-size: 23px;
+    margin-bottom: 5px;
+  }
+}
+
+.banner-doacao {
+  /*position: absolute;
+  bottom: 0;*/
+  margin: 52px 0 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}

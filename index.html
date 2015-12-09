@@ -1,1 +1,107 @@
-<h1>Projeto Taroni</h1>
+---
+layout: default
+---
+
+<div class="home container">
+
+  <div id="webdoor">
+      <div class="carousel slide" data-ride="carousel" id="webdoor_carousel">
+          <!-- bolinhas -->
+          <ol class="carousel-indicators">
+            <li class="active"
+                data-target="#webdoor_carousel"
+                data-slide-to="0">
+            </li>
+            <li class=""
+                data-target="#webdoor_carousel"
+                data-slide-to="1">
+            </li>
+            <li class=""
+                data-target="#webdoor_carousel"
+                data-slide-to="2">
+            </li>
+          </ol>
+
+          <!-- sliders -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <img src="{{ "/assets/images/webdoor_img1.jpg" | prepend: site.baseurl  }}" data-src="" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">Teste</div>
+              </div>
+            </div><!-- item -->
+
+            <div class="item">
+              <img src="{{ "/assets/images/webdoor_img2.jpg" | prepend: site.baseurl  }}" data-src="" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">Teste</div>
+              </div>
+            </div><!-- item -->
+
+          </div>
+
+          <!-- controles de navegação -->
+          <a class="left carousel-control hidden-xs hidden-sm" href="#webdoor_carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+
+          <a class="right carousel-control hidden-xs hidden-sm" href="#webdoor_carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+
+      </div>
+  </div><!-- webdoor -->
+
+  <div class="row conteudo">
+    <div class="descricao col-lg-6 col-md-6">
+      <h2>Sobre o projeto</h2>
+      <p>Projeto Taroni Muay Thaí Pra Todos"começou a partir de um vizinho e
+        hoje em dia um grande amigo que vendo aqueles jovens e crianças ali na
+        rua sem fazer nada o dia todo resolveu dar aula e meio sem saber foi
+        com a cara e coragem sem apoio... </p>
+
+      <div class="bloco-rodape">
+        <a href="#" class="right">Conheça mais sobre o projeto</a>
+      </div>
+    </div>
+
+    <div class="video col-lg-6 col-md-6 hidden-sm hidden-xs">
+      <iframe width="100%" height="315"
+              src="https://www.youtube.com/embed/3MgfdrbdCko?rel=0&amp;showinfo=0"
+              frameborder="0"
+              allowfullscreen>
+      </iframe>
+    </div>
+
+  </div><!-- linha de conteudo -->
+
+  <div class="row conteudo">
+    <div class="coordenacao col-lg-6 col-md-6 hidden-sm hidden-xs">
+      <img src="{{ "/assets/images/bruno-chacal.jpg" | prepend: side.baseurl }}">
+      <div class="etiqueta">
+        Bruno Chacal<br>
+        <span>Coordenador do projeto</span>
+      </div>
+    </div>
+
+    <div class="bloco col-lg-6 col-md-6">
+      <div class="horarios">
+        <h2>Nossos Horários</h2>
+        <span class="subtitulo">Segundas, Quartas e Sextas</span>
+        <strong>Infantil</strong> (6 a 12 anos) 20:00 às 21:00<br>
+        <strong>Juvenil e Adulto</strong> (13 anos+) 21:00 às 22:00
+      </div>
+      <div class="banner banner-doacao">
+        <a href="#">
+          <img src="{{ "/assets/images/banner-doacao-material.png" | prepend: side.baseurl }}">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+</div><!-- home container -->
