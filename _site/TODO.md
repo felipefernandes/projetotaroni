@@ -1,8 +1,10 @@
 #Projeto Taroni
 
- - Homepage (ok)
+ - **Homepage (ok)**
  - Sobre o Projeto
+  - imagens
  - Doações
+  - formulário (feedback de enviando e enviado)
   - imagens
   - falta enviar e-mail
  - Horário das aulas
