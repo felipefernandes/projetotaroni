@@ -19,6 +19,7 @@
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.6",
     "angular": "~1.4.8",
-    "angular-auto-validate": "~1.19.3"
+    "angular-auto-validate": "~1.19.3",
+    "masonry": "~3.3.2"
   }
 }
