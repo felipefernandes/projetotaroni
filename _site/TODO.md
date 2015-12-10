@@ -1,22 +1,21 @@
 #Projeto Taroni
 
  - Homepage
-  - texto revisado
-  - imagens para o slideshow
   - video (?)
+
  - Sobre o Projeto
-  - texto revisado
   - imagens
+
  - Doações
   - formulário (feedback de enviando e enviado)
-  - imagens
   - falta enviar e-mail
- - Horário das aulas
-  - conteúdo
-  - imagens
+
+ - **Horário das aulas (ok)**
+
  - Fotos e Videos
-  - conteúdo
-  - imagens
+  - clique para ampliar
+
  - Entre em contato
   - conteúdo
   - formulário
+  - mecanica do formulario

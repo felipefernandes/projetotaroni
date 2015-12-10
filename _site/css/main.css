@@ -469,6 +469,7 @@ h2 {
   padding: 30px 0 0; }
 
 .conteudo {
+  position: relative;
   margin-top: 30px;
   margin-bottom: 30px; }
   .conteudo:last-child {
@@ -484,6 +485,9 @@ h2 {
 
 .bloco {
   position: relative; }
+
+.bg-info {
+  padding: 10px; }
 
 #pre-header {
   background: black;
@@ -588,3 +592,56 @@ h2 {
   .banner-doacao img {
     width: 100%;
     height: auto; }
+
+/* ---- .grid-item ---- */
+* {
+  box-sizing: border-box; }
+
+/* force scrollbar */
+html {
+  overflow-y: scroll; }
+
+body {
+  font-family: sans-serif; }
+
+/* ---- isotope ---- */
+.grid {
+  background: #fff; }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* ---- .grid-item ---- */
+.grid-sizer,
+.grid-item {
+  width: 33.333%; }
+
+.grid-item {
+  float: left; }
+
+.grid-item img {
+  display: block;
+  max-width: 100%; }
+
+@media (min-width: 1500px) {
+  #masonry-grid .gutter-sizer {
+    width: 4%; }
+
+  #masonry-grid .grid-item {
+    width: 22%;
+    margin-bottom: 4%; } }
+@media (max-width: 1200px) {
+  #masonry-grid .gutter-sizer {
+    width: 4%; }
+
+  #masonry-grid .grid-item {
+    width: 48%; } }
+@media (max-width: 768px) {
+  #masonry-grid .gutter-sizer {
+    width: 0%; }
+
+  #masonry-grid .grid-item {
+    width: 100%; } }
