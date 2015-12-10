@@ -13,15 +13,14 @@ permalink: /doacoes/
 
   <div class="row post-content">
     <div class="descricao col-lg-6 col-md-6">
-      <p>Um pequeno texto falando sobre a necessidade de doação dos equipamentos
-      esportivos</p>
+      <p>Necessário para proteção de nossos alunos, os materiais esportivos são
+      itens obrigatórios para prática do esporte. Se você tiver algum dos
+      materiais listados e não estiver mais usando, ficaremos muito felizes em
+      aceitá-lo como doação.</p>
 
       <div class="hidden-xs hidden-sm">
-        [ fotos de materiais esportivos ]<br>
-        <img src="http://www.placehold.it/555x100"><br><br>
-
-        [ fotos com as crianças usando os materiais ]<br>
-        <img src="http://www.placehold.it/555x300">
+        <p>&nbsp;</p>
+        <img src="{{ "/assets/images/materiais-esportivos.png" | prepend: site.baseurl }}">
       </div>
 
       <div class="visible-xs visible-sm">
@@ -37,7 +36,7 @@ permalink: /doacoes/
             novalidate="novalidate"
             ng-submit="onSubmit()">
         <div class="input-group form-group">
-          <span class="input-group-addon">Seu Nome</span>
+          <span class="input-group-addon">Seu Nome*</span>
           <input type="text"
                 class="form-control"
                 placeholder="Digite aqui"
@@ -46,7 +45,7 @@ permalink: /doacoes/
                 required="required">
         </div>
         <div class="input-group form-group">
-          <span class="input-group-addon">Seu e-mail</span>
+          <span class="input-group-addon">Seu e-mail*</span>
           <input type="email"
                  class="form-control"
                  placeholder="email@host.xwz"
@@ -55,7 +54,7 @@ permalink: /doacoes/
                  required="required">
         </div>
         <div class="input-group form-group">
-          <span class="input-group-addon">Telefone de contato</span>
+          <span class="input-group-addon">Telefone de contato*</span>
           <input type="text"
                  class="form-control"
                  placeholder="00000-0000"
@@ -122,6 +121,7 @@ permalink: /doacoes/
         </div><!-- col-lg-6 -->
 
         <div class="col-xs-12">
+          <small>Os campos com * são obrigatórios.</small>
           <div class="form-group pull-right">
             <button type="submit" class="btn btn-default">Enviar</button>
           </div>
