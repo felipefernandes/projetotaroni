@@ -6,11 +6,23 @@ permalink: /fotos-e-videos/
 <article class="post container">
 
   <div class="row post-content">
-    <div class="descricao col-lg-6 col-md-6">
+    <div class="descricao col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <h1 class="post-title">{{ page.title }}</h1>
 
       <div class="conteudo">
+
+        <div class="grid" id="galeria">
+          <div class="grid-sizer"></div>
+          {% for foto in site.data.fotos %}
+            <div class="grid-item" id="foto-{{foto.indice}}">
+              <img src="{{foto.arquivo}}" />
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="clearfix"></div>
       </div>
     </div>
   </div>
+
 </article>
