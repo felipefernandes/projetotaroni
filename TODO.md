@@ -16,6 +16,7 @@
   - clique para ampliar
 
  - Entre em contato
-  - conteúdo
-  - formulário
   - mecanica do formulario
+
+ - Geral
+  - Google Analytics
