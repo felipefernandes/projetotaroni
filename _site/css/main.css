@@ -645,3 +645,24 @@ body {
 
   #masonry-grid .grid-item {
     width: 100%; } }
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #site-footer,
+  .center-xs {
+    text-align: center;
+    float: none; }
+
+  .hashtag {
+    font-size: 1.5em; } }
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  #site-footer,
+  .center-xs {
+    text-align: center;
+    float: none; }
+
+  .hashtag {
+    font-size: 1.5em; } }

@@ -28,6 +28,14 @@
 
 
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=284876824948117";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <div id="pre-header">
   <div class="container">
@@ -167,20 +175,20 @@
 
   <div class="container">
     <div class="row top">
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-sm-12 col-xs-12 center-xs">
         <a class="logotipo" href="/" title="Projeto Taroni Muay Thai Para Todos">
           <img src="/assets/images/logo-rodape.png">
         </a>
       </div>
 
-      <div class="col-lg-9">
+      <div class="col-lg-9 col-sm-12 col-xs-12 center-xs">
         <div class="hashtag">#PratiqueMuayThaiPelaSaúde</div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-lg-3">
-        <div class="footer-menu">
+      <div class="col-lg-3 hidden-xs hidden-sm">
+        <div class="footer-menu center-xs">
           <!-- sort:"weight é uma variavel atachada no objeto página
           para definir a ordem no menu" -->
           
@@ -224,13 +232,23 @@
         </div>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-7 col-sm-12 col-xs-12">
         <div class="redes-sociais">
-          facebook, instagram, e outras coisas
+          <div class="fb-page"
+              data-href="https://www.facebook.com/Projeto-Taroni-Muaythai-Para-Todos-1676837902591953/?fref=ts"
+              data-small-header="true"
+              data-adapt-container-width="true"
+              data-hide-cover="false"
+              data-show-facepile="true">
+          </div>
         </div>
       </div>
 
       <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 assinatura">
+        <div class="hidden-lg hidden-sm">
+          <br><br>
+        </div>
+
         <a class="logotipo" href="http://pracadoconhecimento.com.br" target="_blank">
           <img src="/assets/images/nave-assinatura.png">
         </a>
