@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Sobre o Projeto</title>
+  <title>Entre em contato</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
 
   <link rel="stylesheet" href="/assets/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://www.projetotaroni.org/sobre-o-projeto/">
+  <link rel="canonical" href="http://www.projetotaroni.org/Contato/">
   <link rel="alternate" type="application/rss+xml" title="Projeto Taroni Muay Thai Para Todos" href="http://www.projetotaroni.org/feed.xml">  
 </head>
 
@@ -66,7 +66,7 @@
               
                 
                   
-                    <a class="page-link active" href="/sobre-o-projeto/">Sobre o Projeto</a>
+                    <a class="page-link" href="/sobre-o-projeto/">Sobre o Projeto</a>
                   
                 
               
@@ -90,7 +90,7 @@
               
                 
                   
-                    <a class="page-link" href="/Contato/">Entre em contato</a>
+                    <a class="page-link active" href="/Contato/">Entre em contato</a>
                   
                 
               
@@ -110,32 +110,74 @@
         <article class="post container">
 
   <div class="row post-content">
-    <div class="descricao col-lg-6 col-md-6">
-      <h1 class="post-title">Sobre o Projeto</h1>
+    <div class="descricao col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h1 class="post-title">Entre em contato</h1>
 
       <div class="conteudo">
-        <p>O projeto <em>Taroni Muay Thai Para Todos</em> surgiu da iniciativa de Bruno Chacal e Victor Luiz que ao
-        observarem a quantidade de crianças e adolescentes que passavam o dia pelas ruas do
-        bairro sem fazer nenhuma atividade, decidiram dar aulas oferecendo-lhes uma opção de
-        lazer esportivo. Sem o apoio de patrocinadores e sem material adequado, o projeto é
-        mantido pelos idealizadores que são responsável por contribuir mensalmente com
-        o pagamento da conta de luz e a eventual manutenção do local.</p>
+        <p>Para entrar em contato conosco, preencha o formulário abaixo ou
+          envie um email para <a href="mailto:chacal.bl@hotmail.com">chacal.bl@hotmail.com</a>.<br>
+          Ou venha nos visitar: <em>Av. Santa Cruz (Taroni), 7190 - Senador Camará / Rio de Janeiro/RJ</em></p>
 
-        <p>A divulgação do <em>Taroni Muay Thai Para Todos</em> é feita pelos próprios alunos e hoje
-        conta com cerca de quarenta participantes e recebe ajuda de amigos. Apesar de não
-        receber nenhuma remuneração, os idealizadores do projeto sentem-se realizados em fazer o que
-        fizeram por eles há doze anos e contribuir para o desenvolvimento das crianças e jovens do projeto
-        através do <em>Muay Thai</em>.</p>
+        <div class="row" ng-controller="FormularioContato">
+            <div class="col-lg-6">
+              <form class="form"
+                    novalidate="novalidate"
+                    ng-submit="onSubmit()">
+
+                <div class="form-group">
+                  <label for="nome">Nome</label>
+                  <input type="text"
+                         class="form-control"
+                         id="nome"
+                         required="required"
+                         ng-model="infos.nome">
+                </div>
+                <div class="form-group">
+                  <label for="nome">E-mail</label>
+                  <input type="email"
+                         class="form-control"
+                         id="email"
+                         required="required"
+                         ng-model="infos.email">
+                </div>
+                <div class="form-group">
+                  <label for="nome">Assunto</label>
+                  <input type="text"
+                         class="form-control"
+                         id="assunto"
+                        required="required"
+                        ng-model="infos.assunto">
+                </div>
+                <div class="form-group">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea id="mensagem"
+                            class="form-control"
+                            required="required"
+                            ng-model="infos.mensagem"></textarea>
+                </div>
+                <div class="form-group">
+                  <span ng-show="[[ success ]]" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true">
+                    Formulário enviado com sucesso!
+                  </span>
+                  <span ng-show="[[ error ]]" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true">
+                    Ops, parece que ocorreu algum erro no envio.
+                  </span>
+                  <small class="help-block">Todos os campos são obrigatórios</small>
+                  <button type="submit" class="btn btn-default">Enviar</button>
+                </div>
+
+              </form>
+            </div>
+            <div class="col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8262742569004!2d-43.490831885384274!3d-22.88287508502398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be076a6702393%3A0xca795ab6d6277798!2sAv.+de+Santa+Cruz%2C+7190+-+Sen.+Camar%C3%A1%2C+Rio+de+Janeiro+-+RJ!5e0!3m2!1spt-BR!2sbr!4v1449841438963"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
       </div>
 
     </div>
-
-    <div class="descricao col-lg-6 col-md-6">
-      <img src="http://placehold.it/300x600">
-    </div>
-
   </div>
-
 </article>
 
       </div>

@@ -33,7 +33,10 @@
             </a>
 
             <div class="trigger">
-              {% for my_page in site.pages %}
+              <!-- sort:"weight é uma variavel atachada no objeto página
+              para definir a ordem no menu" -->
+              {% assign pages = site.pages | sort:"weight"  %}
+              {% for my_page in pages %}
                 {% if my_page.title %}
                   {% if page.url == my_page.url %}
                     <a class="page-link active" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>

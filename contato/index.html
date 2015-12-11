@@ -1,0 +1,78 @@
+---
+layout: default
+title: Entre em contato
+permalink: /Contato/
+weight: 600
+---
+<article class="post container">
+
+  <div class="row post-content">
+    <div class="descricao col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <h1 class="post-title">{{ page.title }}</h1>
+
+      <div class="conteudo">
+        <p>Para entrar em contato conosco, preencha o formulário abaixo ou
+          envie um email para <a href="mailto:{{site.email}}">{{ site.email }}</a>.<br>
+          Ou venha nos visitar: <em>Av. Santa Cruz (Taroni), 7190 - Senador Camará / Rio de Janeiro/RJ</em></p>
+
+        <div class="row" ng-controller="FormularioContato">
+            <div class="col-lg-6">
+              <form class="form"
+                    novalidate="novalidate"
+                    ng-submit="onSubmit()">
+
+                <div class="form-group">
+                  <label for="nome">Nome</label>
+                  <input type="text"
+                         class="form-control"
+                         id="nome"
+                         required="required"
+                         ng-model="infos.nome">
+                </div>
+                <div class="form-group">
+                  <label for="nome">E-mail</label>
+                  <input type="email"
+                         class="form-control"
+                         id="email"
+                         required="required"
+                         ng-model="infos.email">
+                </div>
+                <div class="form-group">
+                  <label for="nome">Assunto</label>
+                  <input type="text"
+                         class="form-control"
+                         id="assunto"
+                        required="required"
+                        ng-model="infos.assunto">
+                </div>
+                <div class="form-group">
+                  <label for="mensagem">Mensagem</label>
+                  <textarea id="mensagem"
+                            class="form-control"
+                            required="required"
+                            ng-model="infos.mensagem"></textarea>
+                </div>
+                <div class="form-group">
+                  <span ng-show="[[ success ]]" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true">
+                    Formulário enviado com sucesso!
+                  </span>
+                  <span ng-show="[[ error ]]" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true">
+                    Ops, parece que ocorreu algum erro no envio.
+                  </span>
+                  <small class="help-block">Todos os campos são obrigatórios</small>
+                  <button type="submit" class="btn btn-default">Enviar</button>
+                </div>
+
+              </form>
+            </div>
+            <div class="col-lg-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8262742569004!2d-43.490831885384274!3d-22.88287508502398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be076a6702393%3A0xca795ab6d6277798!2sAv.+de+Santa+Cruz%2C+7190+-+Sen.+Camar%C3%A1%2C+Rio+de+Janeiro+-+RJ!5e0!3m2!1spt-BR!2sbr!4v1449841438963"
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</article>
