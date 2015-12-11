@@ -21,6 +21,7 @@
     "angular": "~1.4.8",
     "angular-auto-validate": "~1.19.3",
     "masonry": "~3.3.2",
-    "imagesloaded": "~3.2.0"
+    "imagesloaded": "~3.2.0",
+    "fancyBox": "~2.1.5"
   }
 }

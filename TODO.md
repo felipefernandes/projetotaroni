@@ -12,11 +12,9 @@
 
  - **Horário das aulas (ok)**
 
- - Fotos e Videos
-  - clique para ampliar
+ - **Fotos e Videos (ok)**
 
  - Entre em contato
   - mecanica do formulario
 
  - Geral
-  - Google Analytics

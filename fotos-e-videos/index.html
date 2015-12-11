@@ -16,7 +16,9 @@ weight: 500
           <div class="grid-sizer"></div>
           {% for foto in site.data.fotos %}
             <div class="grid-item" id="foto-{{foto.indice}}">
-              <img src="{{foto.arquivo}}" />
+              <a href="{{foto.arquivo}}" class="fancybox" rel="gallery">
+                <img src="{{foto.arquivo}}" />
+              </a>
             </div>
           {% endfor %}
         </div>

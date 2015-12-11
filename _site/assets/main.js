@@ -108,6 +108,10 @@ app.controller('FormularioContato', function ($scope, $http) {
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
 $(document).ready( function() {
+
+  // Inicializacao do FancyBox
+  $('.fancybox').fancybox();
+
   // init Masonry after all images have loaded
   var $grid = $('.grid').imagesLoaded( function() {
     $grid.masonry({
