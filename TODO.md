@@ -3,8 +3,7 @@
  - Homepage
   - video (?)
 
- - Sobre o Projeto
-  - imagens
+ - **Sobre o Projeto (ok)**
 
  - **Doações (ok)**
 
@@ -12,7 +11,6 @@
 
  - **Fotos e Videos (ok)**
 
- - Entre em contato
-  - mecanica do formulario
+ - **Entre em contato (ok)**
 
- - Geral
+ - Outros
