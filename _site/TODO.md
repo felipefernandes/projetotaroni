@@ -18,3 +18,4 @@
   - mecanica do formulario
 
  - Geral
+  - No Rodapé: Facebook Likebox
