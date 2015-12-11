@@ -36,8 +36,8 @@ weight: 300
       <form class="form"
             novalidate="novalidate"
             ng-submit="onSubmit()">
-        <div class="input-group form-group">
-          <span class="input-group-addon">Seu Nome*</span>
+        <div class="input-group form-group col-xs-12">
+          <label for="nome">Seu Nome *</label>
           <input type="text"
                 class="form-control"
                 placeholder="Digite aqui"
@@ -45,8 +45,8 @@ weight: 300
                 ng-model="formModel.nome"
                 required="required">
         </div>
-        <div class="input-group form-group">
-          <span class="input-group-addon">Seu e-mail*</span>
+        <div class="input-group form-group col-xs-12">
+          <label for="email">Seu e-mail *</label>
           <input type="email"
                  class="form-control"
                  placeholder="email@host.xwz"
@@ -54,8 +54,8 @@ weight: 300
                  ng-model="formModel.email"
                  required="required">
         </div>
-        <div class="input-group form-group">
-          <span class="input-group-addon">Telefone de contato*</span>
+        <div class="input-group form-group col-xs-12">
+          <label for="telefone">Telefone de contato *</label>
           <input type="text"
                  class="form-control"
                  placeholder="00000-0000"

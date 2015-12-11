@@ -6,9 +6,7 @@
  - Sobre o Projeto
   - imagens
 
- - Doações
-  - formulário (feedback de enviando e enviado)
-  - falta enviar e-mail
+ - **Doações (ok)**
 
  - **Horário das aulas (ok)**
 
@@ -18,4 +16,3 @@
   - mecanica do formulario
 
  - Geral
-  - No Rodapé: Facebook Likebox

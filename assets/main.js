@@ -49,10 +49,13 @@ app.controller('DoacoesController', function ($scope, $http) {
       }).
       success(function (data) {
         console.log(":)");
+        alert('Formulário enviado com sucesso. Obrigado!');
+        window.reload(true);
       }).
       error(function(data) {
         console.log(":(");
-        console.log(this.data)
+        console.log(this.data);
+        alert('Infelizmente houve um erro no registro dos dados. Tente novamente, por favor.');
       });
   	};
 });
