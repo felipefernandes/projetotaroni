@@ -57,6 +57,51 @@ app.controller('DoacoesController', function ($scope, $http) {
   	};
 });
 
+app.controller('FormularioContato', function ($scope, $http) {
+  $scope.infos = {};
+  $scope.success = false;
+  $scope.error = false;
+
+  //função que será usada para preparar os dados no formato que poderemos usar no servidor para envio do email
+  var param = function(data) {
+        var returnString = '';
+        for (d in data){
+            if (data.hasOwnProperty(d))
+               returnString += d + '=' + data[d] + '&';
+        }
+        // Remove o último & que não é necessário
+        return returnString.slice( 0, returnString.length - 1 );
+  };
+
+  $scope.onSubmit = function () {
+
+  		console.log("Hey i'm submitted!");
+  		console.log($scope.formModel);
+
+  		$http({
+        url: 'http://felipefernandes.rio/mail.php',
+        method: 'POST',
+        data: param($scope.infos),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }).
+      success(function (data) {
+        console.log(":)");
+        //verifica o retorno do servidor se o email foi enviado
+			if (data.enviado) {
+			   $scope.success = true; //ocultamos o formulário e exibimos mensagem de sucesso
+			} else {
+			   $scope.success = false;
+			}
+      }).
+      error(function(data) {
+        console.log(":(");
+        console.log(this.data);
+        $scope.error = true;
+      });
+  	};
+
+});
+
 
 // jQuery
 
