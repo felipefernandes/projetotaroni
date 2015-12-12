@@ -22,6 +22,7 @@
     "angular-auto-validate": "~1.19.3",
     "masonry": "~3.3.2",
     "imagesloaded": "~3.2.0",
-    "fancyBox": "~2.1.5"
+    "fancyBox": "~2.1.5",
+    "slicknav": "~1.0.5"
   }
 }

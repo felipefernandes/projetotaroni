@@ -666,3 +666,8 @@ body {
 
   .hashtag {
     font-size: 1.5em; } }
+.js .slicknav_menu {
+  display: block;
+  background-color: black; }
+  .js .slicknav_menu a, .js .slicknav_menu a:visited {
+    color: white; }

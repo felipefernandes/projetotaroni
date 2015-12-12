@@ -112,6 +112,11 @@ app.controller('FormularioContato', function ($scope, $http) {
 
 $(document).ready( function() {
 
+  // Inicializacao fo menu responsivel
+  $('#menu').slicknav({
+    'appendTo': '#pre-header'
+  });
+
   // Inicializacao do FancyBox
   $('.fancybox').fancybox();
 
