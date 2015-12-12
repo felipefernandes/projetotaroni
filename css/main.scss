@@ -373,13 +373,14 @@ body {
 }
 
 
+@media screen and (max-width: 40em) {
+  .slicknav_menu {
+  	display:block;
+    background-color: black;
 
-.js .slicknav_menu {
-	display:block;
-  background-color: black;
-
-  & a,
-  & a:visited, {
-    color: white;
+    & a,
+    & a:visited, {
+      color: white;
+    }
   }
 }

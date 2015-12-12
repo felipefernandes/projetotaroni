@@ -670,8 +670,9 @@ body {
 
   .hashtag {
     font-size: 1.5em; } }
-.js .slicknav_menu {
-  display: block;
-  background-color: black; }
-  .js .slicknav_menu a, .js .slicknav_menu a:visited {
-    color: white; }
+@media screen and (max-width: 40em) {
+  .slicknav_menu {
+    display: block;
+    background-color: black; }
+    .slicknav_menu a, .slicknav_menu a:visited {
+      color: white; } }
