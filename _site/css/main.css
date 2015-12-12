@@ -630,28 +630,45 @@ body {
   display: block;
   max-width: 100%; }
 
+.slicknav_menu {
+  display: none; }
+
 @media (min-width: 1500px) {
   #masonry-grid .gutter-sizer {
     width: 4%; }
 
   #masonry-grid .grid-item {
     width: 22%;
-    margin-bottom: 4%; } }
+    margin-bottom: 4%; }
+
+  .slicknav_menu {
+    display: none; } }
 @media (max-width: 1200px) {
   #masonry-grid .gutter-sizer {
     width: 4%; }
 
   #masonry-grid .grid-item {
-    width: 48%; } }
+    width: 48%; }
+
+  .slicknav_menu {
+    display: none; } }
 @media (max-width: 768px) {
   #masonry-grid .gutter-sizer {
     width: 0%; }
 
   #masonry-grid .grid-item {
-    width: 100%; } }
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
+    width: 100%; }
+
+  #menu {
+    display: none; }
+
+  .slicknav_menu {
+    display: block;
+    background-color: black; }
+
+  .slicknav_menu a,
+  .slicknav_menu a:visited {
+    color: white; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   #site-footer,
@@ -660,7 +677,18 @@ body {
     float: none; }
 
   .hashtag {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+
+  #menu {
+    display: none; }
+
+  .slicknav_menu {
+    display: block;
+    background-color: black; }
+
+  .slicknav_menu a,
+  .slicknav_menu a:visited {
+    color: white; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   #site-footer,
@@ -669,10 +697,15 @@ body {
     float: none; }
 
   .hashtag {
-    font-size: 1.5em; } }
-@media screen and (max-width: 40em) {
+    font-size: 1.5em; }
+
+  #menu {
+    display: none; }
+
   .slicknav_menu {
     display: block;
     background-color: black; }
-    .slicknav_menu a, .slicknav_menu a:visited {
-      color: white; } }
+
+  .slicknav_menu a,
+  .slicknav_menu a:visited {
+    color: white; } }

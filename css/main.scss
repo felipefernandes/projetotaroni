@@ -316,34 +316,41 @@ body {
 }
 
 
+.slicknav_menu {
+  display:none;
+}
+
 @media (min-width:1500px){
 	#masonry-grid .gutter-sizer{width:4%;}
 	#masonry-grid .grid-item{width:22%;margin-bottom:4%;}
+  .slicknav_menu {
+    display:none;
+  }
 }
 
 @media (max-width:1200px){
 	#masonry-grid .gutter-sizer{width:4%;}
 	#masonry-grid .grid-item{width:48%;}
+  .slicknav_menu {
+    display:none;
+  }
 }
 
 @media (max-width:768px){
 	#masonry-grid .gutter-sizer{width:0%;}
 	#masonry-grid .grid-item{width:100%;}
-}
+  #menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display:block;
+    background-color: black;
+  }
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
+  .slicknav_menu a,
+  .slicknav_menu a:visited, {
+    color: white;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -357,6 +364,21 @@ body {
   .hashtag {
     font-size: 1.5em;
   }
+
+  #menu {
+    display: none;
+  }
+
+  .slicknav_menu {
+    display:block;
+    background-color: black;
+  }
+
+  .slicknav_menu a,
+  .slicknav_menu a:visited, {
+    color: white;
+  }
+
 }
 
 /* Custom, iPhone Retina */
@@ -370,17 +392,18 @@ body {
   .hashtag {
     font-size: 1.5em;
   }
-}
 
+  #menu {
+    display: none;
+  }
 
-@media screen and (max-width: 40em) {
   .slicknav_menu {
-  	display:block;
+    display:block;
     background-color: black;
+  }
 
-    & a,
-    & a:visited, {
-      color: white;
-    }
+  .slicknav_menu a,
+  .slicknav_menu a:visited, {
+    color: white;
   }
 }
