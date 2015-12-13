@@ -219,11 +219,9 @@ h2 {
   margin-top: -30px;
 }
 
-.video {
-  img {
-    width: 100%;
-    height: auto;
-  }
+.video > img {
+  width: 100%;
+  height: auto;
 }
 
 .descricao {
