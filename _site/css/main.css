@@ -556,6 +556,10 @@ h2 {
 .home {
   margin-top: -30px; }
 
+.video img {
+  width: 100%;
+  height: auto; }
+
 .descricao {
   text-align: justify; }
 
