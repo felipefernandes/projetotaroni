@@ -501,7 +501,9 @@ h2 {
 
 .logotipo {
   display: block;
-  text-align: center; }
+  text-align: center;
+  width: 534px;
+  margin: 0 auto; }
 
 #menu-principal .trigger {
   text-align: center;
